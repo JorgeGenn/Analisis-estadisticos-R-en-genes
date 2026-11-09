@@ -27,9 +27,6 @@ The workflow focuses on a first-principles approach, rigorously evaluating empir
 - **Non-Parametric Validation:** Empirical data distribution assessments demonstrated a lack of normality, validating a strict non-parametric statistical framework (Median and Interquartile Range) for descriptive analyses.
 - **Pathological vs. Pharmacological Drivers:** Tumor extension, rather than pharmacological intervention, is the primary biological factor driving the drastic downregulation of *AQ_actb*, *AQ_gapdh*, and *AQ_b2m*. The identical collapse of expression toward basal levels in both drug and placebo groups indicates significant therapeutic resistance driven by natural pathological progression.
 - **Age-Independent Global Transcriptome:** The overall tumor gene expression profile remains remarkably stable and independent of chronological age (28 out of 30 analyzed genes showed $p > 0.05$). Statistically significant age-linked variations are strictly isolated to specific tumor suppression and apoptotic pathways (*AQ_pten*, $p = 0.02$; *AQ_casp3*, $p < 0.01$).
-
-*(Aquí podemos insertar la tabla de resultados de los modelos logísticos, el gráfico de componentes principales o el Volcano Plot para ilustrar visualmente estos hallazgos)*
-
 ---
 **Author**: Jorge Hurtado Soriano  
 **Date**: September 11, 2026
