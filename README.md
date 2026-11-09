@@ -19,8 +19,8 @@ The workflow focuses on a first-principles approach, rigorously evaluating empir
   - System-level isolation using **Docker** running an **Ubuntu Linux** base image to handle system libraries and command-line toolchains.
 
 ## 📁 Project Files & Deliverables
-- **`Actividad-2.html`**: The primary reference file. This is a self-contained, interactive HTML report rendered from RMarkdown (using Pandoc and jQuery). It compiles all source code, statistical outputs, and graphical visualizations of the entire pipeline.
-- **`Actividad-2.Rmd`**: The source code containing the raw R scripts and markdown narrative.
+- **`AnalisisgenR.html`**: The primary reference file. This is a self-contained, interactive HTML report rendered from RMarkdown (using Pandoc and jQuery). It compiles all source code, statistical outputs, and graphical visualizations of the entire pipeline.
+- **`AnalisisgenR.Rmd`**: The source code containing the raw R scripts and markdown narrative.
 - **`data/`**: Directory containing raw expression counts and clinical metadata.
 
 ## 📊 Key Results
