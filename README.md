@@ -1,18 +1,35 @@
 # Statistical Analysis of Gene Expression Data in R
 
 [![Language](https://img.shields.io/badge/Language-R%20(Bioconductor)-blue)](#)
-[![Method](https://img.shields.io/badge/Method-RNA--Seq%20%7C%20Microarray-orange)](#)
+[![Method](https://img.shields.io/badge/Method-Transcriptomics%20%26%20Clinical-orange)](#)
 [![Context](https://img.shields.io/badge/Context-UNIR%20Master's%20Project-green)](#)
 
 ## 📌 Overview
-This repository contains a reproducible computational pipeline for Differential Gene Expression (DGE) analysis, developed as a technical project for the Master's in Bioinformatics at Universidad Internacional de La Rioja (UNIR).
+This repository contains a reproducible computational pipeline for the statistical analysis of transcriptomic and clinical datasets, developed as a technical biostatistics project (Actividad 2) for the Master's in Bioinformatics at Universidad Internacional de La Rioja (UNIR).
 
-The workflow focuses on [Insert biological context, e.g., identifying transcriptomic signatures in tumor vs. healthy tissues], employing robust statistical methodologies to normalize, explore, and extract significant biological features from high-dimensional genomic data.
+The workflow focuses on a first-principles approach, rigorously evaluating empirical statistical distribution assumptions prior to test selection, and applying predictive modeling and dimensionality reduction to extract significant biological features from high-dimensional genomic data.
 
 ## 🛠️ Tech Stack & Methodology
-- **Data Preprocessing & QC:** Exploratory Data Analysis (EDA) using Principal Component Analysis (PCA) to assess sample variance and batch effects.
-- **Statistical Framework:** Linear modeling and empirical Bayes moderation using **[Insert Tool: DESeq2 / limma]** in R.
-- **Data Visualization:** High-quality scientific plotting (Volcano plots, clustered heatmaps) utilizing `ggplot2` and `pheatmap`.
+- **Statistical Framework:** Empirical evaluation of data distributions and **Multivariate Logistic Regression** to correlate clinical variables with the expression matrix.
+- **Data Preprocessing & QC:** Exploratory Data Analysis (EDA) using **Principal Component Analysis (PCA)** to assess sample variance and underlying dataset structure.
+- **Data Visualization:** High-quality scientific plotting integrated directly into the compiled interactive report.
+- **Reproducible Environment:** 
+  - Scripting and narrative via **RMarkdown** in an **RStudio** environment.
+  - Dependency management via `renv` utilizing **Posit Package Manager** for stable binary packages.
+  - System-level isolation using **Docker** running an **Ubuntu Linux** base image to handle system libraries and command-line toolchains.
+
+## 📁 Project Files & Deliverables
+- **`Actividad-2.html`**: The primary reference file. This is a self-contained, interactive HTML report rendered from RMarkdown (using Pandoc and jQuery). It compiles all source code, statistical outputs, and graphical visualizations of the entire pipeline.
+- **`Actividad-2.Rmd`**: The source code containing the raw R scripts and markdown narrative.
+- **`data/`**: Directory containing raw expression counts and clinical metadata.
 
 ## 📊 Key Results
-*(Aquí iría un breve resumen de los hallazgos y podemos insertar la imagen de tu Volcano Plot)*
+- **Non-Parametric Validation:** Empirical data distribution assessments demonstrated a lack of normality, validating a strict non-parametric statistical framework (Median and Interquartile Range) for descriptive analyses.
+- **Pathological vs. Pharmacological Drivers:** Tumor extension, rather than pharmacological intervention, is the primary biological factor driving the drastic downregulation of *AQ_actb*, *AQ_gapdh*, and *AQ_b2m*. The identical collapse of expression toward basal levels in both drug and placebo groups indicates significant therapeutic resistance driven by natural pathological progression.
+- **Age-Independent Global Transcriptome:** The overall tumor gene expression profile remains remarkably stable and independent of chronological age (28 out of 30 analyzed genes showed $p > 0.05$). Statistically significant age-linked variations are strictly isolated to specific tumor suppression and apoptotic pathways (*AQ_pten*, $p = 0.02$; *AQ_casp3*, $p < 0.01$).
+
+*(Aquí podemos insertar la tabla de resultados de los modelos logísticos, el gráfico de componentes principales o el Volcano Plot para ilustrar visualmente estos hallazgos)*
+
+---
+**Author**: Jorge Hurtado Soriano  
+**Date**: September 11, 2026
