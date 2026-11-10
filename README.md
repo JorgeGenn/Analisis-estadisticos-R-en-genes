@@ -39,7 +39,8 @@ The workflow focuses on a first-principles approach, rigorously evaluating empir
 Clone this repository:
 
    ```bash
-   git clone [https://github.com/JorgeGenn/Anlisis-estadisticos-R-en-genes.git](https://github.com/JorgeGenn/Anlisis-estadisticos-R-en-genes.git)
+
+git clone https://github.com/JorgeGenn/Anlisis-estadisticos-R-en-genes.git
 
 
 1. Open the project in RStudio and restore dependencies:
@@ -49,9 +50,10 @@ Clone this repository:
 2. Render the RMarkdown report:
 
   rmarkdown::render("AnalisisgenR.Rmd")
-
+```
 ### Option 2: Docker Container 
 
+```bash
 1. Build the Docker image:
 
     docker build -t biostats-unir
@@ -59,6 +61,7 @@ Clone this repository:
 2. Run the container and access RStudio Server at http://localhost:8787:
 
    docker run -d -p 8787:8787 -e PASSWORD=yourpassword biostats-unir
+```
 
 
    
