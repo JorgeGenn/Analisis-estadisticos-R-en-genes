@@ -1,5 +1,5 @@
 # 1. Usar la imagen base oficial de RStudio sobre Ubuntu (Linux)
-FROM rocker/rstudio:4.4.1
+FROM rocker/rstudio:latest
 
 # 2. Instalar dependencias del sistema operativo necesarias para R, tidyverse y el paquete 'fs'
 RUN apt-get update && apt-get install -y \
