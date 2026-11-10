@@ -5,7 +5,7 @@
 [![Context](https://img.shields.io/badge/Context-UNIR%20Master's%20Project-green)](#)
 
 ## 📌 Overview
-This repository contains a reproducible computational pipeline for the statistical analysis of transcriptomic and clinical datasets, developed as a technical biostatistics project (Actividad 2) for the Master's in Bioinformatics at Universidad Internacional de La Rioja (UNIR).
+This repository contains a reproducible computational pipeline for the statistical analysis of transcriptomic and clinical datasets, developed as a technical biostatistics project for the Master's in Bioinformatics at UNIR.
 
 The workflow focuses on a first-principles approach, rigorously evaluating empirical statistical distribution assumptions prior to test selection, and applying predictive modeling and dimensionality reduction to extract significant biological features from high-dimensional genomic data.
 
