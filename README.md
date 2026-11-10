@@ -56,11 +56,11 @@ git clone https://github.com/JorgeGenn/Anlisis-estadisticos-R-en-genes.git
 ```bash
 1. Build the Docker image:
 
-    docker build -t biostats-unir
+  sudo docker build -t biostats-unir .
 
 2. Run the container and access RStudio Server at http://localhost:8787:
 
-   docker run -d -p 8787:8787 -e PASSWORD=yourpassword biostats-unir
+   sudo docker run -d -p 8787:8787 -e PASSWORD=yourpassword biostats-unir
 ```
 
 
