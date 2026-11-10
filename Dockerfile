@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y \
     libtiff-dev \
     libicu-dev \
     libuv1-dev \
+    libwebp-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
