@@ -11,7 +11,7 @@ The workflow focuses on a first-principles approach, rigorously evaluating empir
 
 ## 🛠️ Tech Stack & Methodology
 - **Statistical Framework:** Empirical evaluation of data distributions and **Multivariate Logistic Regression** to correlate clinical variables with the expression matrix.
-- **Data Preprocessing & QC:** Exploratory Data Analysis (EDA) using **Principal Component Analysis (PCA)** to assess sample variance and underlying dataset structure.
+- **Data Preprocessing:** Exploratory Data Analysis (EDA) using **Principal Component Analysis (PCA)** to assess sample variance and underlying dataset structure.
 - **Data Visualization:** High-quality scientific plotting integrated directly into the compiled interactive report.
 - **Reproducible Environment:** 
   - Scripting and narrative via **RMarkdown** in an **RStudio** environment.
@@ -54,6 +54,8 @@ git clone https://github.com/JorgeGenn/Anlisis-estadisticos-R-en-genes.git
 ### Option 2: Docker Container 
 
 ```bash
+git clone https://github.com/JorgeGenn/Anlisis-estadisticos-R-en-genes.git
+
 1. Build the Docker image:
 
   sudo docker build -t biostats-unir .
