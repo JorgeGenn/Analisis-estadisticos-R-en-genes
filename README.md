@@ -32,7 +32,7 @@ The workflow focuses on a first-principles approach, rigorously evaluating empir
 **Date**: September 11, 2026
 
 
-## 🚀 How to Run
+## 🚀 How to Run & Reproduce
 
 ### Option 1: Local R Environment
 
@@ -64,6 +64,3 @@ git clone https://github.com/JorgeGenn/Anlisis-estadisticos-R-en-genes.git
 
    sudo docker run -d -p 8787:8787 -e PASSWORD=yourpassword biostats-unir
 ```
-
-
-   
