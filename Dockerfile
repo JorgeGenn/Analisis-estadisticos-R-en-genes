@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # 3. Crear y configurar el directorio de trabajo dentro del contenedor
-WORKDIR /home/rstudio/proyecto_transcriptomica
+WORKDIR /home/rstudio/Anlisis-estadisticos-R-en-genes
 
 # 4. Copiar primero los archivos del entorno para aprovechar el caché de Docker
 COPY renv.lock .
@@ -35,7 +35,7 @@ RUN Rscript -e "options(repos = c(CRAN = 'https://packagemanager.posit.co/cran/_
 COPY . .
 
 # 7. Otorgar permisos al usuario de RStudio
-RUN chown -R rstudio:rstudio /home/rstudio/proyecto_transcriptomica
+RUN chown -R rstudio:rstudio /home/rstudio/Anlisis-estadisticos-R-en-genes
 
 # 8. Exponer el puerto por defecto de RStudio Server
 EXPOSE 8787
