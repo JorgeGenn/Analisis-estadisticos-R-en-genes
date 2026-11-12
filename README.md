@@ -68,6 +68,6 @@ git clone https://github.com/JorgeGenn/Anlisis-estadisticos-R-en-genes.git
    sudo docker run -d -p 8787:8787 --name analisis_genes -e PASSWORD=docker biostats-unir
 
    Password: docker
-   name: analisis_genes
+   name: rstudio
 
 ```
