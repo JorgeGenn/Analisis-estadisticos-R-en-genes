@@ -62,5 +62,9 @@ git clone https://github.com/JorgeGenn/Anlisis-estadisticos-R-en-genes.git
 
 2. Run the container and access RStudio Server at http://localhost:8787:
 
-   sudo docker run -d -p 8787:8787 -e PASSWORD=yourpassword biostats-unir
+   sudo docker run -d -p 8787:8787 --name analisis_genes -e PASSWORD=docker biostats-unir
+
+   Password: docker
+   name: analisis_genes
+
 ```
