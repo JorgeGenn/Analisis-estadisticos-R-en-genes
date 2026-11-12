@@ -57,7 +57,7 @@ cd Analisis-estadisticos-R-en-genes
 ```bash
 git clone https://github.com/JorgeGenn/Anlisis-estadisticos-R-en-genes.git
 
-
+cd Analisis-estadisticos-R-en-genes
 
 1. Build the Docker image:
 
