@@ -40,8 +40,9 @@ Clone this repository:
 
    ```bash
 
-git clone https://github.com/JorgeGenn/Anlisis-estadisticos-R-en-genes.git
+git clone https://github.com/JorgeGenn/Analisis-estadisticos-R-en-genes.git
 
+cd Analisis-estadisticos-R-en-genes
 
 1. Open the project in RStudio and restore dependencies:
 
@@ -55,6 +56,8 @@ git clone https://github.com/JorgeGenn/Anlisis-estadisticos-R-en-genes.git
 
 ```bash
 git clone https://github.com/JorgeGenn/Anlisis-estadisticos-R-en-genes.git
+
+
 
 1. Build the Docker image:
 
